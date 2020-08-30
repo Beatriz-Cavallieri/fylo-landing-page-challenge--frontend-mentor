@@ -1,0 +1,140 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 30px 0;
+  width: 100%;
+}
+
+#logo {
+  width: 80px;
+  margin: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+nav li:hover {
+  color: var(--accent-1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  #logo {
+    width: 120px;
+  }
+  header {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  header {
+    width: 80%;
+  }
+  header #logo {
+    width: 160px;
+  }
+}
+
+:root {
+  --dark-blue: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials: hsl(219, 30%, 18%);
+  --accent-1:hsl(176, 68%, 64%);
+  --accent-2:hsl(198, 60%, 50%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+#introduction {
+  max-width: 700px;
+  padding: 10px;
+}
+
+#introduction h1 {
+  line-height: 2.5rem;
+  font-size: 26px;
+  margin: 25px 10px 10px 10px;
+}
+
+#introduction p {
+  line-height: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 780px) {
+  #introduction p {
+    max-width: 70%;
+  }
+}
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  max-width: 100vw;
+}
+
+#page-container {
+  padding: 20px;
+}
+
+#background {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+p,
+li {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6,
+nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+button {
+  background-color: var(--accent-2);
+  color: var(--text-color);
+  font-weight: bold;
+  border: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

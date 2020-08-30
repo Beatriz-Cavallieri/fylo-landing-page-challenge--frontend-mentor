@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 30px 0;
+    width: 100%;
+}
+
+#logo {
+    width: 80px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+    li {
+        list-style: none;
+        padding-left: 20px;
+        &:hover {
+            color: var(--accent-1);
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #logo {
+        width: 120px;
+    }
+    header {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    header {
+        width: 80%;
+        #logo {
+            width: 160px;
+        }
+    }
+}
