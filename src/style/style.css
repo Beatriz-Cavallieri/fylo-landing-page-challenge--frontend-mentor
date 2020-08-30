@@ -1,0 +1,20 @@
+:root {
+    --dark-blue: hsl(217, 28%, 15%);
+    --main-bg--dark-blue: hsl(218, 28%, 13%);
+    --footer-bg--dark-blue: hsl(216, 53%, 9%);
+    --testimonials--dark-blue: hsl(219, 30%, 18%);
+
+    --accent-cyan:hsl(176, 68%, 64%);
+    --accent-blue:hsl(198, 60%, 50%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
