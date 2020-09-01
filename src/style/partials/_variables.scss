@@ -1,0 +1,32 @@
+:root {
+    // ------------------ Colors ------------------
+    --dark-blue: hsl(217, 28%, 15%);
+    --main-bg: hsl(218, 28%, 13%);
+    --footer-bg: hsl(216, 53%, 9%);
+    --testimonials: hsl(219, 30%, 18%);
+
+    // accent 1: cyan
+    --accent-1:hsl(176, 68%, 64%);
+    // accent 2: blue
+    --accent-2:hsl(198, 60%, 50%);
+
+    --text-color: hsl(0, 0%, 100%);
+
+    //button: hover
+    --button-bg-hover:hsl(198, 60%, 40%);
+    // ------------------ Colors ------------------
+}
+//
+// ------------------ Font sizes ------------------
+// h1 (mobile: auto)
+$h1-desktop: 30px;
+
+// regular p and li texts
+$regular-text-mobile: 14px;
+$regular-text-desktop: 17px;
+// ------------------ Font sizes ------------------
+//
+// ------------------ Other sizing ------------------
+$header-height-mobile: 4rem;
+$header-height-desktop: 6rem;
+// ------------------ Other sizing ------------------

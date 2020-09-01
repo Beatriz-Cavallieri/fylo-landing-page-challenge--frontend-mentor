@@ -1,6 +1,14 @@
-@import './modules/header';
-@import './modules/colors';
-@import './modules/introduction';
+// ---- Import variables and constants for the page
+@import './partials/variables';
+// ----
+// ---- Import component-oriented styling
+// Header
+@import './partials/header';
+// Sections
+@import './partials/introduction';
+// Atomic components
+@import './partials/button';
+// ----
 
 * {
     margin: 0 auto;
@@ -14,7 +22,27 @@ body {
 }
 
 #page-container {
-    padding: 20px;
+    padding: 0 1.5rem 0 1.5rem;
+    main {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+    }
+    p,
+    li {
+        font-size: $regular-text-mobile;
+    }
+    p {
+        line-height: 1.3rem;
+    }
+    h1, h2, h3, h4, h5, h6,
+    nav {
+        font-family: 'Raleway', sans-serif;
+    }
+    section {
+        margin-bottom: 100px;
+    }
 }
 
 #background {
@@ -22,37 +50,16 @@ body {
    width: 100%;
 }
 
-img {
-    max-width: 100%;
-}
-
-p,
-li {
-    font-size: 14px;
-}
-
-h1, h2, h3, h4, h5, h6,
-nav {
-    font-family: 'Raleway', sans-serif;
-}
-
-main {
-    text-align: center;
-}
-
-
-button {
-    background-color: var(--accent-2);
-    color: var(--text-color);
-    font-weight: bold;
-    border: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-}
-
 @media screen and (min-width: 600px) {
-    main {
-        width: 60%;
+    #page-container{
+        main {
+            width: 60%;
+        }
+        p, li {
+            font-size: $regular-text-desktop;
+        }
+        h1 {
+            font-size: $h1-desktop;
+        }
     }
 }

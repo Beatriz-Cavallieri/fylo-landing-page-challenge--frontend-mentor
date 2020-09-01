@@ -1,3 +1,14 @@
+:root {
+  --dark-blue: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials: hsl(219, 30%, 18%);
+  --accent-1:hsl(176, 68%, 64%);
+  --accent-2:hsl(198, 60%, 50%);
+  --text-color: hsl(0, 0%, 100%);
+  --button-bg-hover:hsl(198, 60%, 40%);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,12 +19,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0 30px 0;
   width: 100%;
+  height: 4rem;
 }
 
 #logo {
-  width: 80px;
+  width: 90px;
   margin: 0;
 }
 
@@ -26,7 +37,7 @@ nav {
 
 nav li {
   list-style: none;
-  padding-left: 20px;
+  padding-left: 1.5rem;
 }
 
 nav li:hover {
@@ -46,9 +57,35 @@ nav li:hover {
 @media screen and (min-width: 780px) {
   header {
     width: 80%;
+    height: 6rem;
   }
   header #logo {
     width: 160px;
+  }
+}
+
+#introduction {
+  max-width: 700px;
+  padding: 0 1rem 1rem 1rem;
+}
+
+#introduction img {
+  max-height: 350px;
+}
+
+#introduction h1 {
+  line-height: 2.5rem;
+  font-size: 26px;
+  margin: 1.5rem 0 1rem 0;
+}
+
+#introduction p {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 780px) {
+  #introduction p {
+    max-width: 70%;
   }
 }
 
@@ -60,28 +97,26 @@ nav li:hover {
   --accent-1:hsl(176, 68%, 64%);
   --accent-2:hsl(198, 60%, 50%);
   --text-color: hsl(0, 0%, 100%);
+  --button-bg-hover:hsl(198, 60%, 40%);
 }
 
-#introduction {
-  max-width: 700px;
-  padding: 10px;
+button {
+  background-color: var(--accent-2);
+  color: var(--text-color);
+  font-weight: bold;
+  border: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
 }
 
-#introduction h1 {
-  line-height: 2.5rem;
-  font-size: 26px;
-  margin: 25px 10px 10px 10px;
+button:hover {
+  background-color: var(--button-bg-hover);
 }
 
-#introduction p {
-  line-height: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 780px) {
-  #introduction p {
-    max-width: 70%;
+@media screen and (min-width: 600px) {
+  button {
+    font-size: 17px;
   }
 }
 
@@ -97,44 +132,48 @@ body {
 }
 
 #page-container {
-  padding: 20px;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+#page-container main {
+  text-align: center;
+}
+
+#page-container img {
+  max-width: 100%;
+}
+
+#page-container p,
+#page-container li {
+  font-size: 14px;
+}
+
+#page-container p {
+  line-height: 1.3rem;
+}
+
+#page-container h1, #page-container h2, #page-container h3, #page-container h4, #page-container h5, #page-container h6,
+#page-container nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+#page-container section {
+  margin-bottom: 100px;
 }
 
 #background {
   width: 100%;
 }
 
-img {
-  max-width: 100%;
-}
-
-p,
-li {
-  font-size: 14px;
-}
-
-h1, h2, h3, h4, h5, h6,
-nav {
-  font-family: 'Raleway', sans-serif;
-}
-
-main {
-  text-align: center;
-}
-
-button {
-  background-color: var(--accent-2);
-  color: var(--text-color);
-  font-weight: bold;
-  border: none;
-  width: 250px;
-  height: 50px;
-  border-radius: 25px;
-}
-
 @media screen and (min-width: 600px) {
-  main {
+  #page-container main {
     width: 60%;
+  }
+  #page-container p, #page-container li {
+    font-size: 17px;
+  }
+  #page-container h1 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=index.css.map */

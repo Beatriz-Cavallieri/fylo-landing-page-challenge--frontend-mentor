@@ -1,0 +1,20 @@
+@import './variables';
+
+button {
+    background-color: var(--accent-2);
+    color: var(--text-color);
+    font-weight: bold;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    &:hover {
+        background-color: var(--button-bg-hover);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    button {
+        font-size: $regular-text-desktop;
+    }
+}
