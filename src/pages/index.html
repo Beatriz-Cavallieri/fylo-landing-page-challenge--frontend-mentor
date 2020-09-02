@@ -13,16 +13,22 @@
 <body>
     <div id="page-container">
         <header>
-            <img id="logo" src="../../images/logo.svg" alt="Fylo logo">
+            <img id="header-logo" src="../../images/logo.svg" alt="Fylo logo">
             <nav>
-                <li>Features</li>
-                <li>Team</li>
-                <li>Sign In</li>
+                <a href="#">
+                    <li>Features</li>
+                </a>
+                <a href="#">
+                    <li>Team</li>
+                </a>
+                <a href="#">
+                    <li>Sign In</li>
+                </a>
             </nav>
         </header>
         <main>
             <section id="introduction">
-                <img src="../../images/illustration-intro.png" alt="">
+                <img class="illustration" src="../../images/illustration-intro.png" alt="">
                 <h1>All your files in one secure location, acessible anywhere.</h1>
                 <p>Fylo stores all your most important files in one secure location. Access them wherever you need,
                     share and collaborate with friends, family, and co-workers.</p>
@@ -31,8 +37,83 @@
             <section id="benefits">
                 <script src="../scripts/renderBenefitsSection.js"></script>
             </section>
+            <section id="stay-productive">
+                <img class="illustration" src="../../images/illustration-stay-productive.png" alt="">
+                <div id="text">
+                    <h1>Stay productive, wherever you are</h1>
+                    <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your
+                        file
+                        storage needs.
+                    </p>
+                    <p>
+                        Securely share files and folders with friends, family and colleagues for live collaboration. No
+                        email attachments required.
+                    </p>
+                    <a href="#">
+                        <p>See how Fylo works</p>
+                    </a>
+                </div>
+            </section>
+            <section id="testimonials">
+
+            </section>
+            <section id="early-access">
+                <h2>Get early access today</h2>
+                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                    questions, our support team would be happy to help you.</p>
+                <input type="text" placeholder="email@example.com">
+                <button>Get Started For Free</button>
+            </section>
         </main>
     </div>
+    <footer>
+        <img id="footer-logo" src="../../images/logo.svg" alt="Fylo logo">
+        <div class="footer-info">
+            <div class="icon">
+                <img src="../../images/icon-location.svg" alt="location">
+            </div>
+            <p>Sint veniam commodo nulla et culpa consequat non non voluptate velit ipsum ad culpa.</p>
+        </div>
+        <div class="footer-info">
+            <div class="icon">
+                <img src="../../images/icon-phone.svg" alt="phone">
+            </div>
+            <p>+1-543-123-4567</p>
+        </div>
+        <div class="footer-info">
+            <div class="icon">
+                <img src="../../images/icon-email.svg" alt="e-mail">
+            </div>
+            <p>example@fylo.com</p>
+        </div>
+        <ul>
+            <a href="#">
+                <li>About Us</li>
+            </a>
+            <a href="#">
+                <li>Jobs</li>
+            </a>
+            <a href="#">
+                <li>Press</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+        </ul>
+        <ul>
+            <a href="#">
+                <li>Contact Us</li>
+            </a>
+            <a href="#">
+                <li>Terms</li>
+            </a>
+            <a href="#">
+                <li>Privacy</li>
+            </a>
+
+        </ul>
+        <!-- Add here social media icons -->
+    </footer>
     <script src="../scripts/index.js"></script>
 </body>
 

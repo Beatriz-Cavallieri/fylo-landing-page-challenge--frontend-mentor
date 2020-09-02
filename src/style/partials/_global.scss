@@ -1,0 +1,28 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    max-width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        cursor: pointer;
+        color: var(--accent-1);
+    }
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}

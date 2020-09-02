@@ -4,32 +4,25 @@ header {
     align-items: center;
     width: 100%;
     height: $header-height-mobile;
-}
-
-#logo {
-    width: 90px;
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    margin: 0;
+    #header-logo {
+        width: 90px;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        margin: 0;
+    }
     li {
-        list-style: none;
         padding-left: 1.5rem;
-        &:hover {
-            color: var(--accent-1);
-            cursor: pointer;
-        }
     }
 }
 
 @media screen and (min-width: 600px) {
-    #logo {
-        width: 120px;
-    }
     header {
         width: 80%;
+        #logo {
+            width: 120px;
+        }
     }
 }
 

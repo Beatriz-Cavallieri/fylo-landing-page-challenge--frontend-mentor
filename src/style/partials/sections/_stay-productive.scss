@@ -1,0 +1,28 @@
+#stay-productive {
+    text-align: left;
+    a {
+        border-bottom: 1px solid var(--accent-1);
+        color: var(--accent-1);
+        &:hover {
+            color: var(--accent-2);
+        }
+    } 
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #stay-productive {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        #text, .illustration {
+            width: 45%;
+        }
+        h2 {
+            font-size: 26px;
+        }
+    }
+}

@@ -26,10 +26,13 @@ const benefitsContent = [
 for (let i = 0; i < 4; i++) {
     const benefit = document.createElement("div");
     benefit.classList.add("benefit");
+
     const image = document.createElement("img");
     image.setAttribute("src", benefitsContent[i].image);
+
     const title = document.createElement("h3");
     title.textContent = benefitsContent[i].title;
+
     const description = document.createElement("p");
     description.textContent = benefitsContent[i].description;
 
