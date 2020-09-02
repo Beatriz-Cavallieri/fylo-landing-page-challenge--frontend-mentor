@@ -1,4 +1,7 @@
-const benefits = document.getElementById("benefits");
+const benefits = []
+for (let i = 1; i <= 4; i++) {
+    benefits.push(document.getElementById(`benefit-${i}`))
+}
 
 const benefitsContent = [
     {
@@ -24,9 +27,6 @@ const benefitsContent = [
 ]
 
 for (let i = 0; i < 4; i++) {
-    const benefit = document.createElement("div");
-    benefit.classList.add("benefit");
-
     const image = document.createElement("img");
     image.setAttribute("src", benefitsContent[i].image);
 
@@ -36,9 +36,7 @@ for (let i = 0; i < 4; i++) {
     const description = document.createElement("p");
     description.textContent = benefitsContent[i].description;
 
-    benefit.appendChild(image);
-    benefit.appendChild(title);
-    benefit.appendChild(description);
-
-    benefits.appendChild(benefit);
+    benefits[i].appendChild(image);
+    benefits[i].appendChild(title);
+    benefits[i].appendChild(description);
 }
