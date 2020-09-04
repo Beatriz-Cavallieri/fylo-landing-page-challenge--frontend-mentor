@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/71bbd235bc.js" crossorigin="anonymous"></script>
-    <title>Fylo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
 <body>
@@ -35,19 +35,19 @@
                 <button>Get Started</button>
             </section>
             <section id="benefits">
+                <!-- content os divs is rendered by script -->
+                <script defer src="../scripts/renderBenefitsSection.js"></script>
                 <div class="benefit" id="benefit-1"></div>
                 <div class="benefit" id="benefit-2"></div>
                 <div class="benefit" id="benefit-3"></div>
                 <div class="benefit" id="benefit-4"></div>
-                <script src="../scripts/renderBenefitsSection.js"></script>
             </section>
             <section id="stay-productive">
                 <img class="illustration" src="../../images/illustration-stay-productive.png" alt="">
                 <div id="text">
                     <h1>Stay productive, wherever you are</h1>
                     <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your
-                        file
-                        storage needs.
+                        file storage needs.
                     </p>
                     <p>
                         Securely share files and folders with friends, family and colleagues for live collaboration. No
@@ -71,53 +71,64 @@
         </main>
     </div>
     <footer>
-        <img id="footer-logo" src="../../images/logo.svg" alt="Fylo logo">
-        <div class="footer-info">
-            <div class="icon">
-                <img src="../../images/icon-location.svg" alt="location">
+        <img class="footer-logo" src="../../images/logo.svg" alt="Fylo logo">
+        <div class="footer-content">
+            <div class="footer-info content" href="#">
+                <img class="icon" src="../../images/icon-location.svg" alt="location">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua</p>
             </div>
-            <p>Sint veniam commodo nulla et culpa consequat non non voluptate velit ipsum ad culpa.</p>
-        </div>
-        <div class="footer-info">
-            <div class="icon">
-                <img src="../../images/icon-phone.svg" alt="phone">
+            <div class="footer-contact content">
+                <a class="footer-info" href="#">
+                    <img class="icon" src="../../images/icon-phone.svg" alt="phone">
+                    <p>+1-543-123-4567</p>
+                </a>
+                <a class="footer-info" href="#">
+                    <img class="icon" src="../../images/icon-email.svg" alt="e-mail">
+                    <p>example@fylo.com</p>
+                </a>
             </div>
-            <p>+1-543-123-4567</p>
-        </div>
-        <div class="footer-info">
-            <div class="icon">
-                <img src="../../images/icon-email.svg" alt="e-mail">
-            </div>
-            <p>example@fylo.com</p>
-        </div>
-        <ul>
-            <a href="#">
-                <li>About Us</li>
-            </a>
-            <a href="#">
-                <li>Jobs</li>
-            </a>
-            <a href="#">
-                <li>Press</li>
-            </a>
-            <a href="#">
-                <li>Blog</li>
-            </a>
-        </ul>
-        <ul>
-            <a href="#">
-                <li>Contact Us</li>
-            </a>
-            <a href="#">
-                <li>Terms</li>
-            </a>
-            <a href="#">
-                <li>Privacy</li>
-            </a>
+            <ul class="content">
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Jobs</li>
+                </a>
+                <a href="#">
+                    <li>Press</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+            </ul>
+            <ul class="content">
+                <a href="#">
+                    <li>Contact Us</li>
+                </a>
+                <a href="#">
+                    <li>Terms</li>
+                </a>
+                <a href="#">
+                    <li>Privacy</li>
+                </a>
 
-        </ul>
-        <!-- Add here social media icons -->
+            </ul>
+            <!-- Add here social media icons -->
+            <div class="footer-icons-social-media content">
+                <a class="icon-container" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="icon-container" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="icon-container" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/71bbd235bc.js" crossorigin="anonymous"></script>
     <script src="../scripts/index.js"></script>
 </body>
 

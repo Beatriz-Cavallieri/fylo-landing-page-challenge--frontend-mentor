@@ -4,7 +4,7 @@
 @import './partials/global';
 // Atomic components
 @import './partials/button';
-// Header e Footer
+// Header and Footer
 @import './partials/header';
 @import './partials/footer';
 // Sections
@@ -16,9 +16,6 @@
 
 #page-container {
     padding: 0 1.5rem 0 1.5rem;
-    main {
-        text-align: center;
-    }
     p,
     li {
         font-size: $regular-text-mobile;
@@ -28,7 +25,7 @@
     }
     h1 {
         line-height: 2.5rem;
-        font-size: 26px;
+        font-size: $h1-mobile;
         margin-bottom: 1rem;
     }
 
@@ -39,11 +36,6 @@
     section {
         margin-bottom: 100px;
     }
-}
-
-#background {
-   // position: absolute;
-   width: 100%;
 }
 
 @media screen and (min-width: 600px) {

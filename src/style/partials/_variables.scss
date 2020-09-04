@@ -18,13 +18,19 @@
 }
 //
 // ------------------ Font sizes ------------------
-// h1 (mobile: auto)
+$h1-mobile: 26px;
 $h1-desktop: 30px;
 
 // regular p and li texts
 $regular-text-mobile: 14px;
 $regular-text-desktop: 17px;
 // ------------------ Font sizes ------------------
+//
+// ------------------ Logo sizing ------------------
+$logo-small: 90px;
+$logo-medium: 120px;
+$logo-big: 160px;
+// ------------------ Logo sizing ------------------
 //
 // ------------------ Other sizing ------------------
 $header-height-mobile: 4rem;
