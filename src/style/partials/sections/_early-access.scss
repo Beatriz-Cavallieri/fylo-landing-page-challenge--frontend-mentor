@@ -1,19 +1,41 @@
 #early-access {
-    background-color: var(--dark-blue);
     padding: 3rem 2rem 2rem 2rem;
-    border-radius: 10px;
+    background-color: var(--dark-blue);
     display: flex;
     flex-direction: column;
-    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px -10px black;
+    max-width: 900px;
     h2, p, input {
         margin-bottom: 1rem;
+    }
+    form {
+        margin-top: 1.5rem;
     }
     input {
         border: none;
         height: 50px;
         border-radius: 25px;
+        &::placeholder {
+            position: relative;
+            left: 1.5rem;
+        }
     }
-    input, button {
+    form, input, button {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    h2, p, form {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    form {
+        display: flex;
+        button {
+            max-width: 16rem;
+            margin-left: 1.5rem;
+        }
     }
 }

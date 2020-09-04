@@ -216,6 +216,8 @@ footer .icon-container:hover {
 
 @media screen and (min-width: 780px) {
   footer {
+    margin-top: -15rem;
+    padding-top: 15rem;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -318,9 +320,8 @@ footer .icon-container:hover {
 }
 
 #early-access {
-  background-color: var(--dark-blue);
   padding: 3rem 2rem 2rem 2rem;
-  border-radius: 10px;
+  background-color: var(--dark-blue);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,11 +329,18 @@ footer .icon-container:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px -10px black;
+          box-shadow: 5px 5px 20px -10px black;
+  max-width: 900px;
 }
 
 #early-access h2, #early-access p, #early-access input {
   margin-bottom: 1rem;
+}
+
+#early-access form {
+  margin-top: 1.5rem;
 }
 
 #early-access input {
@@ -341,8 +349,44 @@ footer .icon-container:hover {
   border-radius: 25px;
 }
 
-#early-access input, #early-access button {
+#early-access input::-webkit-input-placeholder {
+  position: relative;
+  left: 1.5rem;
+}
+
+#early-access input:-ms-input-placeholder {
+  position: relative;
+  left: 1.5rem;
+}
+
+#early-access input::-ms-input-placeholder {
+  position: relative;
+  left: 1.5rem;
+}
+
+#early-access input::placeholder {
+  position: relative;
+  left: 1.5rem;
+}
+
+#early-access form, #early-access input, #early-access button {
   width: 100%;
+}
+
+@media screen and (min-width: 780px) {
+  h2, p, form {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  form button {
+    max-width: 16rem;
+    margin-left: 1.5rem;
+  }
 }
 
 #page-container {
