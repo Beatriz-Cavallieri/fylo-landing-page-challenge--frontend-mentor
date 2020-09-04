@@ -122,6 +122,10 @@ header li {
 }
 
 footer {
+  margin-top: -18rem;
+  padding-top: 18rem;
+  z-index: -3;
+  position: relative;
   background-color: var(--footer-bg);
   text-align: left;
   width: 100%;
@@ -324,6 +328,7 @@ footer .icon-container:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 #early-access h2, #early-access p, #early-access input {

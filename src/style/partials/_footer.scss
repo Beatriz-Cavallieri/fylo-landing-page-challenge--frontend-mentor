@@ -2,6 +2,10 @@ footer {
     * {
         margin: 0 0;
     }
+    margin-top: -18rem;
+    padding-top: 18rem;
+    z-index:-3;
+    position: relative;
     background-color: var(--footer-bg);
     text-align: left;
     width: 100%;
