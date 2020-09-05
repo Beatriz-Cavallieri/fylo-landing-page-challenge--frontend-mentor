@@ -5,8 +5,18 @@
     }
     img {
         margin-bottom: 2rem;
+        height: 5rem;
     }
     h3 {
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    #benefits {
+        display: flex;
+        .benefit {
+            max-width: 50rem;
+        }
     }
 }
