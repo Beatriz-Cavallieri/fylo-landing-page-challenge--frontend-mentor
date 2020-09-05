@@ -1,18 +1,24 @@
 #stay-productive {
     text-align: left;
     a {
-        border-bottom: 1px solid var(--accent-1);
         color: var(--accent-1);
         &:hover {
             color: var(--accent-2);
         }
+        border-bottom: 1px solid var(--accent-1);
     } 
-    p {
+    a > p {
+        display: inline-block;
+        padding: 0;
+    }
+    h2, p {
+        margin-left: 0;
+        padding-left: 0;
         margin-bottom: 1rem;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 780px) {
     #stay-productive {
         display: flex;
         justify-content: space-around;
@@ -22,7 +28,8 @@
             width: 45%;
         }
         h2 {
-            font-size: 26px;
+            font-size: $h1-desktop;
+            max-width: 25rem;
         }
     }
 }
