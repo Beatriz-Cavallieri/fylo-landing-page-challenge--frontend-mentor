@@ -4,6 +4,8 @@ header {
     align-items: center;
     width: 100%;
     height: $header-height-mobile;
+    background-color: var(--dark-blue);
+    padding: 0 1.5rem 0 1.5rem;
     #header-logo {
         width: $logo-small;
         margin: 0;
@@ -19,7 +21,7 @@ header {
 
 @media screen and (min-width: 600px) {
     header {
-        width: 80%;
+        padding: 0 10% 0 10%;
         #logo {
             width: $logo-medium;
         }
@@ -28,9 +30,8 @@ header {
 
 @media screen and (min-width: 780px) {
     header {
-        width: 80%;
         height: $header-height-desktop;
-        #logo {
+        #header-logo {
             width: $logo-big;
         }
     }

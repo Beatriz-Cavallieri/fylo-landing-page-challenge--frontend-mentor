@@ -1,7 +1,13 @@
 #introduction {
-    max-width: 700px;
-    padding: 0 1rem 1rem 1rem;
-    img {
+    background-color: var(--dark-blue);
+    background-image: url('../../../../images/bg-curvy-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    .container{
+        max-width: 700px;
+    }
+    img.illustration {
         max-height: 350px;
     }
     h1 {
@@ -13,7 +19,11 @@
 }
 
 @media screen and (min-width: 780px) {
-    #introduction p, h1 {
-        max-width: 90%;
+    #introduction {
+        p, h1 {
+            max-width: 90%;
+        }
+         background-image: url('../../../../images/bg-curvy-desktop.svg');
+         background-size: 100% 40%;
     }
 }

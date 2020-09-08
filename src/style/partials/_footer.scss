@@ -77,11 +77,11 @@ footer {
             justify-content: space-between;
             padding: 0;
             margin-top: 2rem;
-            .content {
-                max-width: 30%;
-                ul {
-                    width: 15%;
-                }
+            #footer-content_location {
+                width: 35%;
+            }
+            .footer-contact {
+                width: 12rem;
             }
         }
         .footer-icons-social-media,

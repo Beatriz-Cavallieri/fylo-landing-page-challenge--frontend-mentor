@@ -4,19 +4,22 @@
 @import './partials/global';
 // Atomic components
 @import './partials/button';
-// Header and Footer
-@import './partials/header';
-@import './partials/footer';
 // Sections
 @import './partials/sections/introduction';
 @import './partials/sections/benefits';
+@import './partials/sections/early-access';
 @import './partials/sections/stay-productive';
 @import './partials/sections/testimonials';
-@import './partials/sections/early-access';
+// Header and Footer
+@import './partials/header';
+@import './partials/footer';
 // ----
 
 #page-container {
-    padding: 0 1.5rem 0 1.5rem;
+    .container {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
     p,
     li {
         font-size: $regular-text-mobile;
@@ -41,7 +44,6 @@
 
 @media screen and (min-width: 600px) {
     #page-container {
-        #introduction,
         #benefits {
             width: 60%;
         }

@@ -11,30 +11,32 @@
 </head>
 
 <body>
+    <header>
+        <img id="header-logo" src="../../images/logo.svg" alt="Fylo logo">
+        <nav>
+            <a href="#">
+                <li>Features</li>
+            </a>
+            <a href="#">
+                <li>Team</li>
+            </a>
+            <a href="#">
+                <li>Sign In</li>
+            </a>
+        </nav>
+    </header>
     <div id="page-container">
-        <header>
-            <img id="header-logo" src="../../images/logo.svg" alt="Fylo logo">
-            <nav>
-                <a href="#">
-                    <li>Features</li>
-                </a>
-                <a href="#">
-                    <li>Team</li>
-                </a>
-                <a href="#">
-                    <li>Sign In</li>
-                </a>
-            </nav>
-        </header>
         <main>
             <section id="introduction">
-                <img class="illustration" src="../../images/illustration-intro.png" alt="">
-                <h1>All your files in one secure location, acessible anywhere.</h1>
-                <p>Fylo stores all your most important files in one secure location. Access them wherever you need,
-                    share and collaborate with friends, family, and co-workers.</p>
-                <button>Get Started</button>
+                <div class="container">
+                    <img class="illustration" src="../../images/illustration-intro.png" alt="">
+                    <h1>All your files in one secure location, acessible anywhere.</h1>
+                    <p>Fylo stores all your most important files in one secure location. Access them wherever you need,
+                        share and collaborate with friends, family, and co-workers.</p>
+                    <button>Get Started</button>
+                </div>
             </section>
-            <section id="benefits">
+            <section id="benefits" class="container">
                 <!-- content os divs is rendered by script -->
                 <script defer src="../scripts/renderBenefitsSection.js"></script>
                 <div class="row">
@@ -46,7 +48,7 @@
                     <div class="benefit" id="benefit-4"></div>
                 </div>
             </section>
-            <section id="stay-productive">
+            <section id="stay-productive" class="container">
                 <img class="illustration" src="../../images/illustration-stay-productive.png" alt="">
                 <div id="text">
                     <h2>Stay productive, wherever you are</h2>
@@ -63,7 +65,7 @@
                     </a>
                 </div>
             </section>
-            <section id="testimonials">
+            <section id="testimonials" class="container">
                 <img class="testimonials-bg-quote" src="../../images/bg-quotes.png" alt="">
                 <div class="testimonials-card">
                     <p>
@@ -116,7 +118,7 @@
                     </div>
                 </div>
             </section>
-            <section id="early-access">
+            <section id="early-access" class="container">
                 <h2>Get early access today</h2>
                 <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                     questions, our support team would be happy to help you.</p>
@@ -130,12 +132,12 @@
     <footer>
         <img class="footer-logo" src="../../images/logo.svg" alt="Fylo logo">
         <div class="footer-content">
-            <div class="footer-info content" href="#">
+            <div id="footer-content_location" class="footer-info" href="#">
                 <img class="icon" src="../../images/icon-location.svg" alt="location">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua</p>
             </div>
-            <div class="footer-contact content">
+            <div class="footer-contact">
                 <a class="footer-info" href="#">
                     <img class="icon" src="../../images/icon-phone.svg" alt="phone">
                     <p>+1-543-123-4567</p>
